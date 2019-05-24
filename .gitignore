@@ -14,6 +14,7 @@
 !/.travis.yml
 !/karma.conf.js
 !/webpack.config.js
+!/.gitignore
 /coverage
 /demo/work
 /dist

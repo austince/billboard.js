@@ -12,7 +12,7 @@
     "master",
     "next",
     {
-      "name": "alpha",
+      "name": "beta",
       "prerelease": true
     }
   ]
