@@ -12,6 +12,7 @@ install:
 
 cache:
   yarn: true
+  npm: true
   directories:
     - $HOME/.npm
 
