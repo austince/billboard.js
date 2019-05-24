@@ -40,15 +40,19 @@ jobs:
       after_success:
         - npm run coveralls
     - stage: release
-      script:
-        - npm run build
-        - npm run release
-      'on':
-        repo: naver/billboard.js
-        branches:
-          only:
-            - master
-            - next
-            - alpha
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run build
+          - npm run release
+        'on':
+          repo: naver/billboard.js
+          branches:
+            only:
+              - master
+              - next
+              - beta
 
 
