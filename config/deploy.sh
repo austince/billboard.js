@@ -28,9 +28,13 @@ npm run jsdoc && cp -r doc dist release/$VERSION/
 
 # if this is the @next release channel, also deploy docs to in latest folder
 if [[ $CUR_BRANCH == "next" ]]; then
-  mkdir release/latest
-  cp -r doc dist release/latest/
+  DIST_TAG=next
+else
+  DIST_TAG=latest
 fi
+
+mkdir release/$DIST_TAG
+cp -r doc dist release/$DIST_TAG
 
 # push to github pages
 npx gh-pages --dist $DIST_FOLDER --dest $DEST_FOLDER --add --remote $DEST_BRANCH --message $COMMIT_MESSAGE
