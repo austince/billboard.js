@@ -1,6 +1,7 @@
 <img src="https://naver.github.io/billboard.js/img/logo/billboard.js.svg" width="350" alt="billboard.js">
 
 [![version][badge-version]][link-version] [![Build Status][badge-build-status]][link-build-status] [![Coverage Status][badge-coverage]][link-coverage] [![download][badge-download]][link-download] [![jsDelivr][badge-jsDelivr]][link-jsDelivr] [![gzip size][badge-gzip-size]][link-gzip-size] [![Greenkeeper][badge-gk]][link-gk]
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 billboard.js is a re-usable, easy interface JavaScript chart library, based on D3 v4+.
 > The name "billboard" comes from the famous `billboard chart` which everybody knows.<br>
@@ -244,6 +245,21 @@ Once you created a branch and finished the development, you must perform a test 
 $ npm test
 ```
 Running the `npm test` command will start [Mocha](https://mochajs.org/) tests via [Karma-runner](https://karma-runner.github.io/).
+
+### Releasing
+
+`billboard.js` is released with [`semantic-release`](https://github.com/semantic-release/semantic-release) using the plugins:
+- [`commit-analyzer`](https://github.com/semantic-release/commit-analyzer) to determine the next version from commit messages.
+- [`release-notes-generator`](https://github.com/semantic-release/release-notes-generator) to summarize the release.
+- [`changelog`](https://github.com/semantic-release/changelog) to update the CHANGELOG.md file.
+- [`github`](https://github.com/semantic-release/github) to publish a [GitHub release](https://github.com/chaijs/chai-http/releases).
+- [`git`](https://github.com/semantic-release/git) to commit release assets.
+- [`npm`](https://github.com/semantic-release/npm) to publish to [npm](https://www.npmjs.com/package/chai-http).
+
+
+Several distribution channels are available:
+https://github.com/semantic-release/semantic-release/blob/beta/docs/recipes/distribution-channels.md#publishing-on-distribution-channels
+
 
 
 ## Bug Report

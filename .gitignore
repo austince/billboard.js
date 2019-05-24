@@ -5,6 +5,8 @@
 /*.html
 /*.js
 /.*
+!/commitlint.config.js
+!/.releaserc.json
 /coverage
 /demo/work
 /dist
