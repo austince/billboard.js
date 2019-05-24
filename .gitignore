@@ -7,6 +7,13 @@
 /.*
 !/commitlint.config.js
 !/.releaserc.json
+!/.eslintrc
+!/.babelrc
+!/.editorconfig
+!/.npmignore
+!/.travis.yml
+!/karma.conf.js
+!/webpack.config.js
 /coverage
 /demo/work
 /dist
