@@ -10,10 +10,6 @@
   "tagFormat": "${version}",
   "branches": [
     "master",
-    "next",
-    {
-      "name": "beta",
-      "prerelease": true
-    }
+    "next"
   ]
 }

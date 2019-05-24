@@ -44,15 +44,12 @@ jobs:
       deploy:
         provider: script
         skip_cleanup: true
-        script:
-          - npm run build
-          - npm run release
+        script: npm run release
         'on':
           repo: naver/billboard.js
           branches:
             only:
               - master
               - next
-              - beta
 
 
